@@ -1,0 +1,123 @@
+/*All Resolutions*/
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        .page-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+    /*Header and Footer Styles*/
+        header, footer {
+            background-color: #011638;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+
+        .page-footer {
+            font-size: 1em;
+            margin-top: 10px;
+            padding: 5px 0;
+            width: 100%;
+            bottom: 0;
+        }
+    /*Heading Styles*/
+        h2 {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #9a7AA0;
+            margin-bottom: 10px;
+        }
+
+    /*Body Content Styles*/
+        main {
+            max-width: 100%;
+            margin: 0 auto;
+            padding-top: 200px;
+        }
+
+
+        p {
+            margin-bottom: 15px;
+        }
+
+
+
+/*Desktop Style*/
+    @media screen and (min-width: 769px) {
+
+        /* HTML Form Styles*/
+            label {
+                font-weight: bold;
+            }
+
+            input[type="radio"] {
+                margin-right: 10px;
+                margin-left: 2px;
+            }
+
+        button {
+            background-color: #011638;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            button:hover {
+                background-color: #86BBD8;
+            }
+
+
+    }
+
+/*Mobile Style*/
+    @media screen and (max-width: 768px) {
+        .logo {
+            display: none;
+        }
+
+        .page-header {
+            font-size: .5em;
+            max-width: 768px;
+            margin: 0 auto;
+            padding: 5px 0;
+        }
+
+        main {
+            padding-top: 80px;
+            padding-bottom: 20px;
+        }
+
+        .page-footer {
+            font-size: .5em;
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+
+    }
