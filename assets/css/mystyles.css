@@ -120,6 +120,7 @@
                 margin-top: 20px;
                 overflow-y: auto;
                 text-align: center;
+                border: 1px solid #3F5E5A;
             }
 
             .profile-box img {
@@ -141,19 +142,22 @@
                 grid-column: span 1;
                 padding: 10px;
                 background-color: #fff;
+                border: 2px solid #3F5E5A;
+                border-radius: 8px;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                 width: 100%;
                 box-sizing: border-box;
                 margin-bottom: 20px;
                 break-inside: avoid;
-                border: #3F5E5A;
+
             }
 
             .infobox:nth-of-type(odd):last-of-type {
                 grid-column: span 2;
                 column-count: 2;
                 word-break: break-word;
-                border: #3F5E5A;
+                background-color: #fff;
+                border: 2px solid #3F5E5A;
             }
 
             p {
@@ -238,6 +242,17 @@
             .img-custwidth {
                 padding-top: 4rem;
                 width: 512px;
+            }
+
+            .image-container {
+                display: flex;
+                gap: 10px;
+            }
+
+            .wireframe-image {
+                align-items: center;
+                max-width: 90%;
+                height: auto;
             }
 
             /*Tables*/
@@ -347,6 +362,16 @@
                 column-count: 1;
                 word-break: break-word;
             }
+                .table th,
+                .table td {
+                    padding: 0.8rem;
+                }
 
+                .table thead {
+                    font-size: 0.7rem;
+                }
 
+            .image-container {
+                flex-direction: column;
+            }
         }

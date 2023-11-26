@@ -10,3 +10,8 @@ Project colours:
 | Carolina Blue    | 134, 187, 216  | #86BBD8  |
 | Olivine          | 170, 189, 140  | #AABD8C  |
 | Mountbatten Pink | 154, 122, 160  | #9A7AA0  |
+
+
+References:
+-	Flowbite CSS (https://flowbite.com/docs/getting-started/introduction/)
+- Some Javascript ideas/code from: https://dev.to/nickfazzpdx

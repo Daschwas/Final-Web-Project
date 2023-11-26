@@ -1,4 +1,4 @@
-import { Collapse } from 'flowbite';
+import { Collapse } from '../../node_modules/flowbite';
 
 document.addEventListener('DOMContentLoaded', function () {
     const $navbar = document.getElementById('navbar-target');
