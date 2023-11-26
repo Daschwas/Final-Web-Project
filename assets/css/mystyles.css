@@ -63,6 +63,7 @@
                 font-weight: bold;
                 color: #9a7AA0;
                 margin-bottom: 10px;
+                text-align: center;
             }
 
         /*Body Content Styles*/
@@ -105,7 +106,7 @@
 
             .card-description {
                 margin-bottom: 15px;
-            }
+                text-align: center            }
 
             p {
                 margin-bottom: 15px;
@@ -141,8 +142,8 @@
             }
 
             .heading-proj1:hover {
-                background-color: #ff9800;
-                border-bottom: solid 1px #ff9800;
+                background-color: #86BBD8;
+                border-bottom: solid 1px #86BBD8;
             }
 
             .heading-proj2{
@@ -154,9 +155,8 @@
             }
 
             .heading-proj2:hover {
-                color: #eeeeee;
-                background-color: #212121;
-                border-bottom: solid 1px #212121;
+                background-color: #AABD8C;
+                border-bottom: solid 1px #AABD8C;
             }
 
             .heading-proj3 {
@@ -168,8 +168,8 @@
             }
 
             .heading-proj3:hover {
-                background-color: #ff6f61;
-                border-bottom: solid 1px #ff6f61;
+                background-color: #9A7AA0 ;
+                border-bottom: solid 1px #9A7AA0 ;
             }
 
             .tab-content {
