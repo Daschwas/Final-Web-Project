@@ -48,9 +48,7 @@
                 color: #011638;
             }
 
-
-
-    /*Heading Styles*/
+        /*Heading Styles*/
             .h2 {
                 font-size: 2em;
                 font-weight: bold;
@@ -103,7 +101,6 @@
                 padding: 20px;
                 text-align: center;
             }
-
 
             .card-description {
                 margin-bottom: 15px;
@@ -178,7 +175,7 @@
                 background-color: #86BBD8;
             }
 
-            /*Project List*/
+        /*Project List*/
             .container-fluid {
                 position: relative;
                 z-index: 2;
@@ -244,6 +241,7 @@
                 width: 512px;
             }
 
+        /*Image Containers*/
             .image-container {
                 display: flex;
                 gap: 10px;
@@ -255,7 +253,7 @@
                 height: auto;
             }
 
-            /*Tables*/
+        /*Tables*/
             .table-container {
                 position: relative;
                 overflow-x: auto;
@@ -298,15 +296,17 @@
     /*Desktop Style*/
         @media screen and (min-width: 769px) {
 
-            /* HTML Form Styles*/
-                label {
-                    font-weight: bold;
-                }
+            label {
 
-                input[type="radio"] {
+                font-weight: bold;
+
+            }
+
+            input[type="radio"] {
                     margin-right: 10px;
                     margin-left: 2px;
-                }
+
+            }
 
             button {
                 background-color: #011638;
@@ -319,10 +319,10 @@
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
 
-                button:hover {
-                    background-color: #86BBD8;
-                }
+            button:hover {
+                background-color: #86BBD8;
 
+            }
 
         }
 
@@ -362,14 +362,17 @@
                 column-count: 1;
                 word-break: break-word;
             }
-                .table th,
-                .table td {
-                    padding: 0.8rem;
-                }
 
-                .table thead {
+            .table th,
+            .table td {
+                    padding: 0.8rem;
+
+            }
+
+            .table thead {
                     font-size: 0.7rem;
-                }
+
+            }
 
             .image-container {
                 flex-direction: column;

@@ -1,10 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dale Schwass | Web Tech | Cert 4 Prog</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/necolas-normalize.css">
+    <link rel="stylesheet" href="assets/css/mystyles.css">
+    <link href="node_modules/flowbite/dist/flowbite.css" rel="stylesheet" />
 </head>
+
 <body>
 
+<!-- Tailwind Navigation Bar and Page Header-->
+<nav class="bg-white border-b border-oxford-blue fixed w-full z-20 top-0 start-0  margin-bottom: 20px dark:bg-gray-900">
+    <div class="bg-white max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img class = "logo" src="assets/img/logo.png"  alt="Logo" />
+            <span class="self-center text-oxford-blue text-2xl font-semibold whitespace-nowrap dark:text-white">Final Web Project</span>
+        </div>
+        <!-- Collapsable Navigation Bar-->
+        <button data-collapse-toggle="navbar-trigger" id="navbar-trigger" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-target">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                <li class="mb-2 md:mb-0">
+                    <a href="index.html" class="block py-2 px-3 text-oxford-blue rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-carolina-blue md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Home</a>
+                </li>
+                <li class="mb-2 md:mb-0">
+                    <a href="about.html" class="block py-2 px-3 text-oxford-blue rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-carolina-blue md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >About</a>
+                </li>
+                <li class="mb-2 md:mb-0">
+                    <a href="contact.html" class="block py-2 px-3 text-oxford-blue rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-carolina-blue md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Contact</a>
+                </li>
+                <li class="mb-2 md:mb-0">
+                    <a href="#" class="block py-2 px-3 text-oxford-blue rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-carolina-blue md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Resume</a>
+                </li >
+                <li class="mb-2 md:mb-0">
+                    <a href="projects.html" class="block py-2 px-3 text-oxford-blue rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-carolina-blue md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"  >Project</a>
+                </li>
+                <li class="mb-2 md:mb-0">
+                    <a href="mywork.html" class="block py-2 px-3 text-oxford-blue rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-carolina-blue md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"  aria-current="page" >Sample Projects</a>
+                </li>
+            </ul>
+        </div>
+        <div class="relative">
+            <!-- Search bar within the navigation -->
+            <form action="#" method="get" class="mt-4 lg:mt-0">
+                <label for="search" class="sr-only">Search:</label>
+                <div class="flex items-center">
+                    <input type="text" id="search" name="search" placeholder="Search..." class="border p-2 rounded-l-md lg:flex-grow">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Body Containing Resume-->
+<main class="container mx-auto mt-160 p-4 bg-feldgrau bg-opacity-20  dark:bg-gray-100 rounded-lg shadow-lg margin">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold text-oxford-blue dark:text-white">Dale Schwass</h1>
+        <p class="text-lg font-semibold -black text-carolina-blue border-b-2 border-carolina-blue dark:text-blue-500">Web Developer | Budding Programmer | Tafe Student</p>
+    </div>
+
+    <section class="mt-8">
+        <h2 class="text-2xl font-semibold underline text-oxford-blue dark:text-white">Education</h2>
+        <p class="mt-2">Certification IV in Web Technologies | 2023 (hopefully!) </p>
+        <p class="mt-2">Certification III in Information Technologies | 2011 </p>
+    </section>
+
+    <section class="mt-8">
+        <h2 class="text-2xl font-semibold text-oxford-blue underline dark:text-white">Experience</h2>
+        <p class="mt-2">Web Developer at ABC Company | 2022-2023</p>
+        <p class="mt-2">Role at Job | 2012-2023</p>
+        <p class="mt-2">Postman at Town| 2021-2022</p>
+        <p class="mt-2">Agent at Job Recruitment Agency | 2014-2021</p>
+        <p class="mt-2">Game Developer at Wordle Clone | 2022-2022</p>
+        <p class="mt-2">App Developer at Mobile Company| 2011-2017</p>
+    </section>
+
+    <section class="mt-8">
+        <h2 class="text-2xl font-semibold underline text-oxford-blue dark:text-white">Skills</h2>
+        <ul class="list-disc list-inside mt-2">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Tailwind, Node.js</li>
+            <li>Version Control (Git)</li>
+            <li>Python, C#</li>
+            <li>SQL, Laragon</li>
+            <li>Proper Data Management</li>
+            <li>Ethics  & Innovation</li>
+        </ul>
+    </section>
+
+    <section class="mt-8">
+        <h2 class="text-2xl font-semibold underline text-oxford-blue dark:text-white">Projects</h2>
+        <p class="mt-2">Final Web Project: In this project, we are to complete a series of steps to create our own "mobile first", responsive, Portfolio Website.</p>
+        <p class="mt-2">Phase 1-5 Web Project: Developed a web site in accordance with client requirements that utilised version control, tailwind (and css), javascript and HTML</p>
+    </section>
+
+</main>
+
+<!-- Page Footer-->
+<footer class="page-footer">
+    <div class="footer-content">
+        <img class = "logo" src="assets/img/logo.png" alt="Logo">
+        <p>© Copyright 2023 Dale Schwass. All rights reserved.</p>
+    </div>
+    <div>
+    </div>
+</footer>
+
+<!-- Javascript Scripts-->
+<script src="node_modules/flowbite/dist/flowbite.js"></script>
+<script src="assets/js/myscripts.js"></script>
+
 </body>
+
 </html>
