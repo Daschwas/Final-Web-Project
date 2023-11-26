@@ -192,6 +192,45 @@
                 width: 512px;
             }
 
+            /*Tables*/
+            .table-container {
+                position: relative;
+                overflow-x: auto;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                border-radius: 0.375rem;
+            }
+
+            .table {
+                width: 100%;
+                font-size: 0.875rem;
+                text-align: left;
+                color: #011638;
+            }
+
+            .table thead {
+                font-size: 0.75rem;
+                text-transform: uppercase;
+                background-color: #3F5E5A;
+                color: #f0f0f0;
+            }
+
+            .table th,
+            .table td {
+                padding: 1rem;
+                border-bottom: 1px solid #e5e7eb;
+            }
+
+            .table tbody tr:hover {
+                background-color: #9A7AA0;
+            }
+
+            .table th {
+                font-weight: 600;
+            }
+
+            .table td {
+                font-weight: 400;
+            }
 
     /*Desktop Style*/
         @media screen and (min-width: 769px) {
