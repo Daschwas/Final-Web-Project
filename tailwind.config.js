@@ -7,6 +7,7 @@ module.exports = {
         'projects.html',
         'mywork.html',
         'about.html',
+        "./node_modules/flowbite/**/*.js",
 
     
 ],
@@ -21,5 +22,7 @@ module.exports = {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        require('flowbite/plugin')
+    ],
 }
