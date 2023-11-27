@@ -157,8 +157,6 @@
                 border: 2px solid #3F5E5A;
             }
 
-
-
             p, .infobox p  {
                 margin-bottom: 15px;
             }
@@ -261,6 +259,7 @@
                 overflow-x: auto;
                 box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
                 border-radius: 0.375rem;
+                margin-bottom: 20px;
             }
 
             .table {
@@ -295,6 +294,32 @@
                 font-weight: 400;
             }
 
+        /*Forms*/
+            label {
+                color: #011638;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 6px;
+                background-color: #9A7AA0;
+                font-size: 1em;
+
+            }
+
+            .contact.form {
+                width: calc(60% - 10px);
+                margin-bottom: 6px;
+            }
+
+            .contact.form input,
+            .contact.form textarea {
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border: 1.5px solid #3F5E5A;
+                border-radius: 5px;
+            }
+
     /*Desktop Style*/
         @media screen and (min-width: 769px) {
 
@@ -312,6 +337,14 @@
             button:hover {
                 background-color: #86BBD8;
 
+            }
+
+            .wireframe-image {
+                max-width: 100%;
+                height: auto;
+                width: auto;
+                margin: 0 auto;
+                display: block;
             }
 
         }
