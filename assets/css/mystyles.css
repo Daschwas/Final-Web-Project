@@ -157,7 +157,9 @@
                 border: 2px solid #3F5E5A;
             }
 
-            p {
+
+
+            p, .infobox p  {
                 margin-bottom: 15px;
             }
 
@@ -296,18 +298,6 @@
     /*Desktop Style*/
         @media screen and (min-width: 769px) {
 
-            label {
-
-                font-weight: bold;
-
-            }
-
-            input[type="radio"] {
-                    margin-right: 10px;
-                    margin-left: 2px;
-
-            }
-
             button {
                 background-color: #011638;
                 color: white;
@@ -328,7 +318,7 @@
 
     /*Mobile Style*/
         @media screen and (max-width: 768px) {
-            .logo {
+            .logo, .profile-box {
                 display: none;
             }
 
@@ -349,6 +339,17 @@
                 max-width: 768px;
                 margin: 0 auto;
             }
+
+
+            .card {
+                flex: 0 0 calc(100% - 10px);
+                max-width: calc(100% - 10px);
+                padding: 1rem;
+                margin-bottom: 0.6rem;
+                text-align: justify;
+                word-break: break-word;
+            }
+
 
             .grid-container {
                 font-size: .8em;
@@ -376,5 +377,6 @@
 
             .image-container {
                 flex-direction: column;
+                align-items: center;
             }
         }
