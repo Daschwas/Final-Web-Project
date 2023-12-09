@@ -11,18 +11,17 @@
     <link rel="stylesheet" href="assets/css/site.css">
     <link rel="stylesheet" href="assets/css/necolas-normalize.css">
     <link rel="stylesheet" href="assets/css/mystyles.css">
-    <link href="node_modules/flowbite/dist/flowbite.css" rel="stylesheet" />
 
 </head>
 <body>
 
 <!-- Tailwind Navigation Bar and Page Header-->
-<nav class="bg-white border-b border-oxford-blue fixed w-full z-20 top-0 start-0  margin-bottom: 20px dark:bg-gray-900">
-    <div class="bg-white max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+<section class="bg-white border-b border-oxford-blue fixed w-full z-20 top-0 start-0  margin-bottom: 20px dark:bg-gray-900">
+    <nav class="bg-white max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <nav class="flex items-center space-x-3 rtl:space-x-reverse">
             <img class = "logo" src="assets/img/logo.png"  alt="Logo" />
             <span class="self-center text-oxford-blue text-2xl font-semibold whitespace-nowrap dark:text-white">Final Web Project</span>
-        </div>
+        </nav>
         <!-- Collapsable Navigation Bar-->
         <button data-collapse-toggle="navbar-trigger" id="navbar-trigger" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -30,7 +29,7 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
             </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-target">
+        <nav class="hidden w-full md:block md:w-auto" id="navbar-target">
             <!-- Navigation Bar-->
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                 <li class="mb-2 md:mb-0">
@@ -52,56 +51,53 @@
                     <a href="mywork.html" class="block py-2 px-3 text-oxford-blue rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-carolina-blue md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Sample Projects</a>
                 </li>
             </ul>
-            </div>
-    </div>
-</nav>
+            </nav>
+    </nav>
+</section>
 
 <!-- Main Area containing Links and Descriptions to Pages-->
 <main>
-        <div class="h2">Home Page</div>
-    <div class="card-container">
-    <div class="card">
-        <div class="h4"><a href="#">Home</a></div>
-        <div class="card-description">This is the home page (where you are now!). It has links to and descriptions of all the other pages.</div>
-    </div>
+        <header class="h2">Home Page</header>
+    <section class="card-container">
+    <article class="card">
+        <header class="h4"><a href="#">Home</a></header>
+        <section class="card-description">This is the home page (where you are now!). It has links to and descriptions of all the other pages.</section>
+    </article>
 
-    <div class="card">
-        <div class="h4"><a href="about.html">About</a></div>
-        <div class="card-description">This page dives into the story and background behind not just myself but the site as well.</div>
-    </div>
-    <div class="card">
-        <div class="h4"><a href="contact.html">Contact</a></div>
-        <div class="card-description">This page is your gateway to reaching out - if you have a question, feedback or just want to say hi, this is the place!</div>
-    </div>
+    <article class="card">
+        <header class="h4"><a href="about.html">About</a></header>
+        <section class="card-description">This page dives into the story and background behind not just myself but the site as well.</section>
+    </article>
+    <article class="card">
+        <header class="h4"><a href="contact.html">Contact</a></header>
+        <section class="card-description">This page is your gateway to reaching out - if you have a question, feedback or just want to say hi, this is the place!</section>
+    </article>
 
-    <div class="card">
-        <div class="h4"><a href="resume.html">Resume</a></div>
-        <div class="card-description">An overview of my CV - come here to get a comprehensive overview of my education, skills, and work history. </div>
-    </div>
-    <div class="card">
-        <div class="h4"><a href="projects.html">Project</a></div>
-        <div class="card-description">An in-depth look into the current project I am tackling and how it has contributed to my growth as a professional in the tech industry.</div>
-    </div>
+    <article class="card">
+        <header class="h4"><a href="resume.html">Resume</a></header>
+        <section class="card-description">An overview of my CV - come here to get a comprehensive overview of my education, skills, and work history. </section>
+    </article>
+    <article class="card">
+        <header class="h4"><a href="projects.html">Project</a></header>
+        <section class="card-description">An in-depth look into the current project I am tackling and how it has contributed to my growth as a professional in the tech industry.</section>
+    </article>
 
-    <div class="card">
-        <div class="h4"><a href="mywork.html">Sample Projects</a></div>
-        <div class="card-description">A closer look at a curated selction of projects from my portfolio. From web development to programming endeavors, each project is a chapter in my coding adventure.</div>
-    </div>
-    </div>
+    <article class="card">
+        <header class="h4"><a href="mywork.html">Sample Projects</a></header>
+        <section class="card-description">A closer look at a curated selction of projects from my portfolio. From web development to programming endeavors, each project is a chapter in my coding adventure.</section>
+    </article>
+    </section>
 </main>
 
 <!-- Page Footer-->
-<footer class="page-footer">
-    <div class="footer-content">
+<section class="page-footer">
+    <footer class="footer-content">
         <img class = "logo" src="assets/img/logo.png" alt="Logo">
         <p>© Copyright 2023 Dale Schwass. All rights reserved.</p>
-    </div>
-    <div>
-    </div>
-</footer>
+    </footer>
+</section>
 
 <!-- Javascript Scripts-->
-<script src="node_modules/flowbite/dist/flowbite.js"></script>
 <script src="assets/js/myscripts.js"></script>
 
 </body>

@@ -10,18 +10,17 @@
     <link rel="stylesheet" href="assets/css/site.css">
     <link rel="stylesheet" href="assets/css/necolas-normalize.css">
     <link rel="stylesheet" href="assets/css/mystyles.css">
-    <link href="node_modules/flowbite/dist/flowbite.css" rel="stylesheet" />
 </head>
 
 <body>
 
 <!-- Tailwind Navigation Bar and Page Header-->
-<nav class="bg-white border-b border-oxford-blue fixed w-full z-20 top-0 start-0  margin-bottom: 20px dark:bg-gray-900">
-    <div class="bg-white max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+<section class="bg-white border-b border-oxford-blue fixed w-full z-20 top-0 start-0  margin-bottom: 20px dark:bg-gray-900">
+    <nav class="bg-white max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <section class="flex items-center space-x-3 rtl:space-x-reverse">
             <img class = "logo" src="assets/img/logo.png"  alt="Logo" />
             <span class="self-center text-oxford-blue text-2xl font-semibold whitespace-nowrap dark:text-white">Final Web Project</span>
-        </div>
+        </section>
         <!-- Collapsable Navigation Bar-->
         <button data-collapse-toggle="navbar-trigger" id="navbar-trigger" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -30,7 +29,7 @@
             </svg>
         </button>
         <!-- Navigation Bar-->
-        <div class="hidden w-full md:block md:w-auto" id="navbar-target">
+        <nav class="hidden w-full md:block md:w-auto" id="navbar-target">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                 <li class="mb-2 md:mb-0">
                     <a href="index.html" class="block py-2 px-3 text-oxford-blue rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-carolina-blue md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"  >Home</a>
@@ -51,37 +50,37 @@
                     <a href="#" class="block py-2 px-3 text-oxford-blue rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-carolina-blue md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page" >Sample Projects</a>
                 </li>
             </ul>
-        </div>
-    </div>
-</nav>
+        </nav>
+    </nav>
+</section>
 
 <!-- Flexi Container with Javascript Project Tabs -->
 <main>
-    <div class="container-fluid">
-        <div class="row d-flex align-items-center">
-            <div id="Project1Link" class="col-sm-4 heading-proj1" data-tab="Project1">
+    <article class="container-fluid">
+        <section class="row d-flex align-items-center">
+            <section id="Project1Link" class="col-sm-4 heading-proj1" data-tab="Project1">
                 <h5 class="mb-0">01.</h5>
                 <h1 class="mb-0"><strong>Project 1: Job Recruitment System</strong></h1>
-            </div>
-            <div id="Project2Link" class="col-sm-4 heading-proj2" data-tab="Project2">
+            </section>
+            <section id="Project2Link" class="col-sm-4 heading-proj2" data-tab="Project2">
                 <h5 class="mb-0">02.</h5>
                 <h1 class="mb-0"><strong>Project 2: Mobile Application</strong></h1>
-            </div>
-            <div id="Project3Link" class="col-sm-4 heading-proj3" data-tab="Project3">
+            </section>
+            <section id="Project3Link" class="col-sm-4 heading-proj3" data-tab="Project3">
                 <h5 class="mb-0">03.</h5>
                 <h1 class="mb-0"><strong>Project 3: Client Site using Tailwind CSS</strong></h1>
-            </div>
-        </div>
-    </div>
+            </section>
+        </section>
+    </article>
     <!-- Project 1 -->
-    <div id="Project1" class="container-fluid tab-content mb-4">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 left-content">
+    <article id="Project1" class="container-fluid tab-content mb-4">
+        <section class="container-fluid">
+            <section class="row">
+                <figure class="col-sm-6 left-content">
                     <strong>Project 1: Job Recruitment System (C#)</strong>
                     <img src="assets/img/project1.jpg" alt="Logo" class="imf-fluid img-custwidth">
-                </div>
-                <div class="col-sm-6 right-content">
+                </figure>
+                <section class="col-sm-6 right-content">
                     <h3><strong>Software Application to Match Contractors and Jobs</strong></h3>
                     <p class="mb-4"> You can find the project repository <a href="https://github.com/Daschwas/Recruitment-System-Project" target="_blank">here</a>.</p>
                     <p class="mb-4">This project involved us creating software the met the following brief: A local recruitment agency has contacted our company to develop an application for their head office
@@ -97,21 +96,19 @@
                     </ul>
                     <p class="mb-4"> The deliverables included a functional, documented program; a testing plan document outlining tests to be conducted; and a test progress report outlining passes, fails and changes made or left to make in
                         code.</p>
-                </div>
-            </div>
-            <div class="row">
-            </div>
-        </div>
-    </div>
+                </section>
+            </section>
+        </section>
+    </article>
     <!-- Project 2 -->
-    <div id="Project2" class="container-fluid tab-content mt-4">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 left-content" >
+    <article id="Project2" class="container-fluid tab-content mt-4">
+        <section class="container-fluid">
+            <section class="row">
+                <figure class="col-sm-6 left-content" >
                     <strong>Project 2: Mobile Application (C#)</strong><br>
                     <img src="assets/img/project2.jpg" alt="Logo" class="imf-fluid img-custwidth">
-                </div>
-                <div class="col-sm-6 right-content">
+                </figure>
+                <section class="col-sm-6 right-content">
                     <h3><strong>Mobile Application (Hey Link Number Validation)</strong></h3>
                     <p class="mb-4">You can find the project repository <a href="https://github.com/Daschwas/Number-Validation-App" target="_blank">here</a>.</p>
                     <p class="mb-4">This project involved implementing our own wireframe designs for a mobile application in MAUI. Applying the knowledge gained through the portfolio components, we developed a complete mobile
@@ -120,19 +117,19 @@
                         component and connecting to Web API to retrieve and display data) and testing & deploying the application.</p>
                     <p>My project focused on a phone number validation app (titled HeyLink) that users could enter and save numbers into. An API call would be made using these entered phone numbers to retrieve information on elements such as country and
                         carrier, and also determine (inclusive of incoming and outgoing country codes) what number the user needed to call to reach that phone line.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+                </section>
+            </section>
+        </section>
+    </article>
     <!-- Project 3 -->
-    <div id="Project3" class="container-fluid tab-content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 left-content">
+    <article id="Project3" class="container-fluid tab-content">
+        <section class="container-fluid">
+            <section class="row">
+                <figure class="col-sm-6 left-content">
                     <strong>Project 3: Client Site Using Tailwind (HTML)</strong>
                     <img src="assets/img/project3.png" alt="Logo." class="imf-fluid img-custwidth">
-                </div>
-                <div class="col-sm-6 right-content">
+                </figure>
+                <section class="col-sm-6 right-content">
                     <h3><strong>Multiple Phase Website Development</strong></h3>
                     <p class="mb-4">You can find the project repository <a href="https://github.com/Daschwas/WebTechProj" target="_blank">here</a>.</p>
                     <p class="mb-4">In this portfolio component, we completed a series of phases that implemented a prescribed layout with us making choices to suit the content. This involved working with CSS (including Tailwind),
@@ -152,25 +149,22 @@
                             <li> Phase 5:
                         In this phase, we implemented a dashboard for phases 0-4 using TailwindCSS, plus a demonstration form and information pages.</li>
                         </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+                </section>
+            </section>
+        </section>
+    </article>
 
 </main>
 
 <!-- Page Footer-->
-<footer class="page-footer">
-    <div class="footer-content">
+<section class="page-footer">
+    <footer class="footer-content">
         <img class = "logo" src="assets/img/logo.png" alt="Logo">
         <p>© Copyright 2023 Dale Schwass. All rights reserved.</p>
-    </div>
-    <div>
-    </div>
-</footer>
+    </footer>
+</section>
 
 <!-- Javascript Scripts-->
-<script src="node_modules/flowbite/dist/flowbite.js"></script>
 <script src="assets/js/tabs.js"></script>
 <script src="assets/js/myscripts.js"></script>
 
